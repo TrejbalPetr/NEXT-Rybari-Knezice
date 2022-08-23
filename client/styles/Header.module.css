@@ -1,0 +1,99 @@
+.MainHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: auto;
+}
+
+.Intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  padding-right: 10%;
+  max-width: 50%;
+}
+
+.Header h1 {
+  color: var(--white);
+}
+
+.Header p {
+  color: var(--white);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* RESPONZIVITA */
+@media screen and (max-width: 1450px) {
+  .Header {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .Header {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Header {
+    max-width: 100%;
+    padding-left: 10%;
+  }
+}
+
+/* ----------------POPUP----------------- */
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.modal {
+  z-index: 1000;
+}
+
+.overlay {
+  /* background: rgba(49,49,49,0.8); */
+  background: rgba(88, 88, 88, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+}
+.modalContent {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  padding: 2rem 2rem;
+  border-radius: 0 15px 0 15px;
+  max-width: 600px;
+  min-width: 300px;
+  background: var(--white);
+}
+
+.closeModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+  background-color: transparent;
+}

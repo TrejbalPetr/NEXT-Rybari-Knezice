@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --font-titles: "Teko", sans-serif;
+  --font-text: "Roboto", sans-serif;
+
+  --paddingLeftRight: 10%;
+
+  --blue: #014572;
+  --green: #b5f200;
+  --darkGreen: #9bcf00;
+  --white: #ffffff;
+  --greyText: #666666;
+  --lightGreyText: #999999;
+  --darkBlue: #072441;
+
+  --color-bg: #eeeeee;
+  --color-footer: #011425;
+
+  --page-padding-x: clamp(0.313rem, 1vw, 2.5rem);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavioral: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  background: var(--color-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-titles);
+  line-height: 100%;
+  font-weight: 400;
+}
+
+h1 {
+  /* 37px - 68px */
+  font-size: clamp(2.313rem, 2vw + 1.75rem, 4.25rem);
+}
+
+h2 {
+  /* 34px - 66px */
+  font-size: clamp(2.313rem, 2vw + 1.75rem, 4.25rem);
+}
+
+h3 {
+  /* 24px - 32pc */
+  font-size: clamp(1.5rem, 0.9vw + 1.25rem, 2rem);
+}
+
+h4 {
+  /* 12 - 27.5 */
+  font-size: clamp(0.75rem, 1vw + 0.5rem, 1.719rem);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+  font-family: var(--font-titles);
+}
+
+a:hover {
+  color: var(--green);
+}
+
+p {
+  font-family: var(--font-text);
+  /* 14 - 18 */
+  font-size: clamp(0.875rem, 0.9vw + 0.5rem, 1.063rem);
+  color: var(--greyText);
+}
+
+button {
+  padding: 0rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.BtnGreen {
+  font-family: var(--font-titles);
+  font-size: clamp(1.25rem, 1vw + 1rem, 2.688rem);
+  font-weight: 400px;
+  border-radius: 0 15px 0 15px;
+  border: 0;
+  background-color: var(--green);
+  color: var(--blue);
+}
+
+.BtnGreen:hover {
+  background-color: var(--darkGreen);
+  color: var(--darkBlue);
+}
+
+.BtnTransparent {
+  font-family: var(--font-titles);
+  font-size: clamp(1.25rem, 1vw + 1rem, 2.688rem);
+  font-weight: 400px;
+  border-radius: 0 15px 0 15px;
+  border: 0;
+  background-color: transparent;
+  color: var(--white);
+}
+
+.BtnTransparent:hover {
+  color: var(--green);
+}
+/* ANIMACE */
+
+.slideRight {
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+@keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+
+.scale_up_center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale_up_center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale_up_center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

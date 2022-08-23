@@ -1,0 +1,43 @@
+.Numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 5%;
+}
+
+.Numbers {
+  text-align: center;
+}
+.Number {
+  flex: 1;
+}
+.Number h2 {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.Number p {
+  color: var(--greyText);
+}
+
+@media screen and (max-width: 1050px) {
+  .Numbers {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+  }
+
+  .Number p {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Numbers {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+  }
+}

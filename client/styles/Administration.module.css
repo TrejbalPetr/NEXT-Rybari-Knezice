@@ -1,0 +1,23 @@
+.Admin {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.Admin p {
+  margin-bottom: 0.5rem;
+}
+
+.Forms form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Forms form input {
+  margin-bottom: 0.5rem;
+}
+
+.Forms form button {
+  width: 100px;
+  height: 30px;
+}
